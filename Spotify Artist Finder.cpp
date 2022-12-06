@@ -11,15 +11,34 @@
 
 // Iterate thtough map to find matching genres
 void FindMapGenres(std::map<std::string, std::vector<std::string>> ArtistsMap, std::string& genre) {
-	std::cout << "Artists in the map with the genre: " << genre << std::endl;
+	// Map Traversal/Search done by Emma Raymaker
+	std::cout << (char)std::toupper(genre[0]) << genre.substr(1) << " Artists by Map" << std::endl;
+	std::cout << "----------------------------------------" << std::endl;;
 	for (std::map<std::string, std::vector<std::string> >::const_iterator ptr = ArtistsMap.begin(); ptr != ArtistsMap.end(); ptr++) {
 
 		for (std::vector<std::string>::const_iterator ptr_2 = ptr->second.begin(); ptr_2 != ptr->second.end(); ptr_2++) {
 			if (*ptr_2 == genre) {
-				std::cout << ptr->first << ": " << *ptr_2 << " " << std::endl;
+				std::cout << ptr->first << std::endl;
 			}
 		}
 	}
+	std::cout << std::endl;
+}
+
+void FindUnorderedGenres(std::unordered_map<std::string, std::vector<std::string>> ArtistsMap, std::string& genre) {
+    // Map Traversal/Search done by Gavin Baltar
+    std::cout << (char)std::toupper(genre[0]) << genre.substr(1) << " Artists by Unordered Map" << std::endl;
+    std::cout << "----------------------------------------" << std::endl;;
+
+    for (std::unordered_map<std::string, std::vector<std::string> >::const_iterator ptr = ArtistsMap.begin(); ptr != ArtistsMap.end(); ptr++) {
+
+        for (std::vector<std::string>::const_iterator ptr_2 = ptr->second.begin(); ptr_2 != ptr->second.end(); ptr_2++) {
+            if (*ptr_2 == genre) {
+                std::cout << ptr->first << std::endl;
+            }
+        }
+    }
+    std::cout << std::endl;
 }
 
 int main()
@@ -120,7 +139,21 @@ int main()
         }
         count++;
     }
-    
-    FindMapGenres(ArtistsMap, genre);
+	// Starts clock for time comparisons
+    	auto start = std::chrono::high_resolution_clock::now();
+    	FindMapGenres(ArtistsMap, genre);
+	auto stop = std::chrono::high_resolution_clock::now();
+	
+	auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
 
+    	std::cout << duration.count() << " microseconds." << std::endl;
+    	std::cout << std::endl;
+
+    	start = std::chrono::high_resolution_clock::now();
+    	FindUnorderedGenres(ArtistsUnordered, genre);
+    	stop = std::chrono::high_resolution_clock::now();
+
+    	duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
+
+    	std::cout << duration.count() << " microseconds." << std::endl;
 }

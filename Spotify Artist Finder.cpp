@@ -11,8 +11,8 @@
 
 int main()
 {
-    std::map<std::string, std::pair<std::string, std::vector<std::string>>> ArtistsMap; // First data structure to be filled with Artists and their Genres 
-    std::unordered_map<std::string, std::pair<std::string, std::vector<std::string>>> ArtistsUnordered; // Second data structure to be filled with Artists and their Genres
+    std::map<std::string, std::vector<std::string>> ArtistsMap; // First data structure to be filled with Artists and their Genres 
+    std::unordered_map<std::string,std::vector<std::string>> ArtistsUnordered; // Second data structure to be filled with Artists and their Genres
     // These two will be searched for Artists with the matching genres, compare their times.
 
     SetConsoleOutputCP(1252); // Allows accented characters
@@ -99,9 +99,9 @@ int main()
                 std::getline(inFile, fileLine); // Gets rest of the file
 
                 if (option == 1) 
-                    ArtistsMap[artistName] = std::make_pair(artistName, artistGenres); // Adds Artist to the map with their genre vector
+                    ArtistsMap[artistName] = artistGenres; // Adds Artist to the map with their genre vector
                 else
-                    ArtistsUnordered[artistName] = std::make_pair(artistName, artistGenres);
+                    ArtistsUnordered[artistName] = artistGenres;
                 artistGenres.clear(); // clears genre vector for next line/artist
             }
         }

@@ -9,6 +9,18 @@
 #include <unordered_map>
 #include <Windows.h>
 
+// Iterate thtough map to find matching genres
+void FindMapGenres(std::map<std::string, std::vector<std::string>> ArtistsMap, std::string& genre) {
+	for (std::map<std::string, std::vector<std::string> >::const_iterator ptr = ArtistsMap.begin(); ptr != ArtistsMap.end(); ptr++) {
+
+		for (std::vector<std::string>::const_iterator ptr_2 = ptr->second.begin(); ptr_2 != ptr->second.end(); ptr_2++) {
+			if (*ptr_2 == genre) {
+				std::cout << ptr->first << ": " << *ptr_2 << " " << std::endl;
+			}
+		}
+	}
+}
+
 int main()
 {
     std::map<std::string, std::vector<std::string>> ArtistsMap; // First data structure to be filled with Artists and their Genres 
@@ -115,7 +127,7 @@ int main()
     else {
         // Unordered_map function to find artists with matching genres - return a vector artist names.
     }
-
-
+    
+    FindMapGenres(ArtistsMap, genre);
 
 }

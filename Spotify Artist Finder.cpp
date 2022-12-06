@@ -119,14 +119,6 @@ int main()
         }
         count++;
     }
-
-    // Not sure if this option split is necessary since they iterate through the same.
-    if(option == 1) {
-     // Map function to find artists with matching genres - return a vector of artist names.   
-    }
-    else {
-        // Unordered_map function to find artists with matching genres - return a vector artist names.
-    }
     
     FindMapGenres(ArtistsMap, genre);
 

@@ -1,51 +1,51 @@
-track name,artist name,artist popularity,artist genres,album name,track popularity
-Unholy (feat. Kim Petras),Sam Smith,88,"['dance pop', 'pop', 'uk pop']",Unholy (feat. Kim Petras),100
-Anti-Hero,Taylor Swift,100,['pop'],Midnights,97
-As It Was,Harry Styles,89,['pop'],Harry's House,92
-La Bachata,Manuel Turizo,84,"['colombian pop', 'latin pop', 'reggaeton', 'reggaeton colombiano', 'trap latino']",La Bachata,97
-All I Want for Christmas Is You,Mariah Carey,82,"['dance pop', 'pop', 'urban contemporary']",Merry Christmas,93
-I'm Good (Blue),David Guetta,88,"['big room', 'dance pop', 'edm', 'pop', 'pop dance']",I'm Good (Blue),97
-Rich Flex,Drake,97,"['canadian hip hop', 'canadian pop', 'hip hop', 'rap', 'toronto rap']",Her Loss,96
-"Quevedo: Bzrp Music Sessions, Vol. 52",Bizarrap,85,"['argentine hip hop', 'pop venezolano', 'trap argentino']","Quevedo: Bzrp Music Sessions, Vol. 52",97
-Last Christmas,Wham!,75,"['dance pop', 'disco', 'europop', 'new romantic', 'new wave', 'new wave pop', 'soft rock']",LAST CHRISTMAS,90
-Made You Look,Meghan Trainor,83,"['dance pop', 'hip pop', 'pop', 'post-teen pop']",Takin' It Back,93
-Under The Influence,Chris Brown,87,"['dance pop', 'pop', 'r&b']",Indigo (Extended),95
-Rockin' Around The Christmas Tree,Brenda Lee,75,"['adult standards', 'brill building pop']",Merry Christmas From Brenda Lee,91
-Me Porto Bonito,Bad Bunny,98,"['reggaeton', 'trap latino']",Un Verano Sin Ti,95
-Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack],Jung Kook,79,['k-pop'],Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack],91
-Another Love,Tom Odell,78,"['chill pop', 'pop']",Long Way Down,67
-Miss You,Oliver Tree,82,['alternative hip hop'],Miss You,94
-I Ain't Worried,OneRepublic,84,"['piano rock', 'pop']","I Ain’t Worried (Music From The Motion Picture ""Top Gun: Maverick"")",95
-Hey Mor,Ozuna,88,"['puerto rican pop', 'reggaeton', 'trap latino']",OzuTochi,90
-Tití Me Preguntó,Bad Bunny,98,"['reggaeton', 'trap latino']",Un Verano Sin Ti,95
-Jingle Bell Rock,Bobby Helms,72,['adult standards'],Jingle Bell Rock/Captain Santa Claus (And His Reindeer Space Patrol),90
-It's Beginning to Look a Lot like Christmas,Michael Bublé,83,"['adult standards', 'canadian pop', 'jazz pop', 'lounge']",Christmas,78
-Bad Habit,Steve Lacy,84,['afrofuturism'],Gemini Rights,88
-DESPECHÁ,ROSALÍA,84,['r&b en espanol'],MOTOMAMI +,86
-Mockingbird,Eminem,91,"['detroit hip hop', 'hip hop', 'rap']",Encore (Deluxe Version),91
-Die For You,The Weeknd,94,"['canadian contemporary r&b', 'canadian pop', 'pop']",Starboy,88
-Calm Down (with Selena Gomez),Rema,79,['nigerian pop'],Calm Down (with Selena Gomez),93
-Efecto,Bad Bunny,98,"['reggaeton', 'trap latino']",Un Verano Sin Ti,94
-I Wanna Be Yours,Arctic Monkeys,87,"['garage rock', 'modern rock', 'permanent wave', 'rock', 'sheffield indie']",AM,93
-Romantic Homicide,d4vd,79,['bedroom pop'],Romantic Homicide,93
-Santa Tell Me,Ariana Grande,89,"['dance pop', 'pop']",Santa Tell Me,89
-Ojitos Lindos,Bad Bunny,98,"['reggaeton', 'trap latino']",Un Verano Sin Ti,93
-golden hour,JVKE,79,"['modern indie pop', 'pop']",this is what ____ feels like (Vol. 1-4),89
-Sweater Weather,The Neighbourhood,84,"['modern alternative rock', 'modern rock', 'pop', 'shimmer pop']",I Love You.,92
-CUFF IT,Beyoncé,86,"['dance pop', 'pop', 'r&b']",RENAISSANCE,93
-SNAP,Rosa Linn,77,['alt z'],SNAP PACK,58
-Midnight Rain,Taylor Swift,100,['pop'],Midnights,91
-Monotonía,Shakira,86,"['colombian pop', 'dance pop', 'latin pop']",Monotonía,92
-Glimpse of Us,Joji,86,['viral pop'],SMITHEREENS,83
-Lavender Haze,Taylor Swift,100,['pop'],Midnights,91
-Until I Found You,Stephen Sanchez,76,"['gen z singer-songwriter', 'pop']",Easy On My Eyes,84
-Heat Waves,Glass Animals,78,"['gauze pop', 'indietronica', 'shiver pop']",Dreamland (+ Bonus Levels),87
-It's the Most Wonderful Time of the Year,Andy Williams,74,"['adult standards', 'brill building pop', 'easy listening']",The Andy Williams Christmas Album,75
-Feliz Cumpleaños Ferxxo,Feid,90,"['colombian pop', 'pop reggaeton', 'reggaeton colombiano', 'trap latino']",FELIZ CUMPLEAÑOS FERXXO TE PIRATEAMOS EL ÁLBUM,87
-STAY (with Justin Bieber),The Kid LAROI,81,"['australian hip hop', 'pop']",F*CK LOVE 3: OVER YOU,86
-Let It Snow! Let It Snow! Let It Snow!,Dean Martin,77,"['adult standards', 'easy listening', 'lounge']",A Winter Romance,88
-Bones,Imagine Dragons,88,"['modern rock', 'rock']",Mercury - Acts 1 & 2,85
-Lift Me Up,Rihanna,89,"['barbadian pop', 'dance pop', 'pop', 'urban contemporary']",Black Panther: Wakanda Forever - Music From and Inspired By,77
-Neverita,Bad Bunny,98,"['reggaeton', 'trap latino']",Un Verano Sin Ti,92
-Here With Me,d4vd,79,['bedroom pop'],Here With Me,89
-Just Wanna Rock,Lil Uzi Vert,86,"['melodic rap', 'philly rap', 'rap', 'trap']",Just Wanna Rock,90
+track name;artist name;artist popularity;artist genres;album name;track popularity
+Unholy (feat. Kim Petras);Sam Smith;88;['dance pop', 'pop', 'uk pop'];Unholy (feat. Kim Petras);100
+Anti-Hero;Taylor Swift;100;['pop'];Midnights;97
+As It Was;Harry Styles;89;['pop'];Harry's House;92
+La Bachata;Manuel Turizo;84;['colombian pop', 'latin pop', 'reggaeton', 'reggaeton colombiano', 'trap latino'];La Bachata;97
+All I Want for Christmas Is You;Mariah Carey;82;['dance pop', 'pop', 'urban contemporary'];Merry Christmas;93
+I'm Good (Blue);David Guetta;88;['big room', 'dance pop', 'edm', 'pop', 'pop dance'];I'm Good (Blue);97
+Rich Flex;Drake;97;['canadian hip hop', 'canadian pop', 'hip hop', 'rap', 'toronto rap'];Her Loss;96
+Quevedo: Bzrp Music Sessions, Vol. 52;Bizarrap;85;['argentine hip hop', 'pop venezolano', 'trap argentino'];Quevedo: Bzrp Music Sessions, Vol. 52;97
+Last Christmas;Wham!;75;['dance pop', 'disco', 'europop', 'new romantic', 'new wave', 'new wave pop', 'soft rock'];LAST CHRISTMAS;90
+Made You Look;Meghan Trainor;83;['dance pop', 'hip pop', 'pop', 'post-teen pop'];Takin' It Back;93
+Under The Influence;Chris Brown;87;['dance pop', 'pop', 'r&b'];Indigo (Extended);95
+Rockin' Around The Christmas Tree;Brenda Lee;75;['adult standards', 'brill building pop'];Merry Christmas From Brenda Lee;91
+Me Porto Bonito;Bad Bunny;98;['reggaeton', 'trap latino'];Un Verano Sin Ti;95
+Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack];Jung Kook;79;['k-pop'];Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack];91
+Another Love;Tom Odell;78;['chill pop', 'pop'];Long Way Down;67
+Miss You;Oliver Tree;82;['alternative hip hop'];Miss You;94
+I Ain't Worried;OneRepublic;84;['piano rock', 'pop'];"I Ain’t Worried (Music From The Motion Picture ""Top Gun: Maverick"")";95
+Hey Mor;Ozuna;88;['puerto rican pop', 'reggaeton', 'trap latino'];OzuTochi;90
+Tití Me Preguntó;Bad Bunny;98;['reggaeton', 'trap latino'];Un Verano Sin Ti;95
+Jingle Bell Rock;Bobby Helms;72;['adult standards'];Jingle Bell Rock/Captain Santa Claus (And His Reindeer Space Patrol);90
+It's Beginning to Look a Lot like Christmas;Michael Bublé;83;['adult standards', 'canadian pop', 'jazz pop', 'lounge'];Christmas;78
+Bad Habit;Steve Lacy;84;['afrofuturism'];Gemini Rights;88
+DESPECHÁ;ROSALÍA;84;['r&b en espanol'];MOTOMAMI +;86
+Mockingbird;Eminem;91;['detroit hip hop', 'hip hop', 'rap'];Encore (Deluxe Version);91
+Die For You;The Weeknd;94;['canadian contemporary r&b', 'canadian pop', 'pop'];Starboy;88
+Calm Down (with Selena Gomez);Rema;79;['nigerian pop'];Calm Down (with Selena Gomez);93
+Efecto;Bad Bunny;98;['reggaeton', 'trap latino'];Un Verano Sin Ti;94
+I Wanna Be Yours;Arctic Monkeys;87;['garage rock', 'modern rock', 'permanent wave', 'rock', 'sheffield indie'];AM;93
+Romantic Homicide;d4vd;79;['bedroom pop'];Romantic Homicide;93
+Santa Tell Me;Ariana Grande;89;['dance pop', 'pop'];Santa Tell Me;89
+Ojitos Lindos;Bad Bunny;98;['reggaeton', 'trap latino'];Un Verano Sin Ti;93
+golden hour;JVKE;79;['modern indie pop', 'pop'];this is what ____ feels like (Vol. 1-4);89
+Sweater Weather;The Neighbourhood;84;['modern alternative rock', 'modern rock', 'pop', 'shimmer pop'];I Love You.;92
+CUFF IT;Beyoncé;86;['dance pop', 'pop', 'r&b'];RENAISSANCE;93
+SNAP;Rosa Linn;77;['alt z'];SNAP PACK;58
+Midnight Rain;Taylor Swift;100;['pop'];Midnights;91
+Monotonía;Shakira;86;['colombian pop', 'dance pop', 'latin pop'];Monotonía;92
+Glimpse of Us;Joji;86;['viral pop'];SMITHEREENS;83
+Lavender Haze;Taylor Swift;100;['pop'];Midnights;91
+Until I Found You;Stephen Sanchez;76;['gen z singer-songwriter', 'pop'];Easy On My Eyes;84
+Heat Waves;Glass Animals;78;['gauze pop', 'indietronica', 'shiver pop'];Dreamland (+ Bonus Levels);87
+It's the Most Wonderful Time of the Year;Andy Williams;74;['adult standards', 'brill building pop', 'easy listening'];The Andy Williams Christmas Album;75
+Feliz Cumpleaños Ferxxo;Feid;90;['colombian pop', 'pop reggaeton', 'reggaeton colombiano', 'trap latino'];FELIZ CUMPLEAÑOS FERXXO TE PIRATEAMOS EL ÁLBUM;87
+STAY (with Justin Bieber);The Kid LAROI;81;['australian hip hop', 'pop'];F*CK LOVE 3: OVER YOU;86
+Let It Snow! Let It Snow! Let It Snow!;Dean Martin;77;['adult standards', 'easy listening', 'lounge'];A Winter Romance;88
+Bones;Imagine Dragons;88;['modern rock', 'rock'];Mercury - Acts 1 & 2;85
+Lift Me Up;Rihanna;89;['barbadian pop', 'dance pop', 'pop', 'urban contemporary'];Black Panther: Wakanda Forever - Music From and Inspired By;77
+Neverita;Bad Bunny;98;['reggaeton', 'trap latino'];Un Verano Sin Ti;92
+Here With Me;d4vd;79;['bedroom pop'];Here With Me;89
+Just Wanna Rock;Lil Uzi Vert;86;['melodic rap', 'philly rap', 'rap', 'trap'];Just Wanna Rock;90

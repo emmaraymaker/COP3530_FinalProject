@@ -11,6 +11,7 @@
 
 // Iterate thtough map to find matching genres
 void FindMapGenres(std::map<std::string, std::vector<std::string>> ArtistsMap, std::string& genre) {
+	std::cout << "Artists in the map with the genre: " << genre << std::endl;
 	for (std::map<std::string, std::vector<std::string> >::const_iterator ptr = ArtistsMap.begin(); ptr != ArtistsMap.end(); ptr++) {
 
 		for (std::vector<std::string>::const_iterator ptr_2 = ptr->second.begin(); ptr_2 != ptr->second.end(); ptr_2++) {

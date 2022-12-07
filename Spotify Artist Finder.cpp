@@ -52,92 +52,77 @@ int main()
     // read input from csv file via spotify api, create map data structure using the Artist Name and Genre
     std::fstream inFile;
     std::string genre;
-    int option = 0;
 
 
     std::cout << "Welcome to the Spotify Artist Finder! Please select a genre (please use all lower case): ";
     std::cin >> genre;
 
-    if (option < 1 || option > 2) {
-        std::cout << "Type \"1\" for a map or \"2\" for an unordered map structure: ";
-        std::cin >> option;
-
-        if (option < 1 || option > 2) {
-            std::cout << "Invalid option." << std::endl;
-        }
-    }
-
     std::cout << "Please wait as we scan the playlists for artists of the " << genre << " genre." << std::endl;
 
-    int count = 0;
-    while (count != 2) {
-        if(count == 0) 
-            inFile.open("track_info.csv");
-        if (count == 1)
-            inFile.open("track_info2.csv");
+ 
+      
+   inFile.open("track_info.csv");
+	
+	inFile.open("track_info.csv");
+    
+    if (inFile.is_open()) {
+        std::string fileLine;
+        std::string artistName;
+        std::string artistSong;
+        std::string artistAlbum;
+        std::string genre;
+        std::vector<std::string> artistGenres;
 
-        if (inFile.is_open()) {
-            std::string fileLine;
-            std::string artistName;
-            std::string artistSong;
-            std::string artistAlbum;
-            std::string genre;
-            std::vector<std::string> artistGenres;
+        std::getline(inFile, fileLine); // Gets header of csv file
 
-            std::getline(inFile, fileLine); // Gets header of csv file
+        while (!inFile.eof()) {
+            std::getline(inFile, fileLine, '|'); // artist id
+            std::getline(inFile, fileLine, '|'); // song id
+            
+            // Get song name
+            std::getline(inFile, fileLine, '|');
+            artistSong = fileLine;
+            //std::cout << artistSong << std::endl;
 
-            while (!inFile.eof()) {
-                // Get song name
-                std::getline(inFile, fileLine, ';');
-                artistSong = fileLine;
-                //std::cout << artistSong << std::endl;
+            // Get artist name
+            std::getline(inFile, fileLine, '|');
+            artistName = fileLine;
+            //std::cout << artistName << std::endl;
 
-                // Get artist name
-                std::getline(inFile, fileLine, ';');
-                artistName = fileLine;
-                //std::cout << artistName << std::endl;
+            // Artist popularity number - not needed
+            std::getline(inFile, fileLine, '|');
+            //std::cout << fileLine << std::endl;
+            // Song genres is from - not needed
+            std::getline(inFile, fileLine, '|');
+            //std::cout << fileLine << std::endl;
 
-                // Artist popularity number - not needed
-                std::getline(inFile, fileLine, ';');
-                //std::cout << fileLine << std::endl;
-                // Song genres is from - not needed
-                std::getline(inFile, fileLine, '[');
-                std::getline(inFile, fileLine, ']');
-                // std::cout << fileLine << std::endl;
-
-                std::stringstream str(fileLine);
-
-                std::getline(str, genre, '\''); // Gets 1st ' from genre list.
+            std::stringstream str(fileLine);
 
 
-                // Goes through genre list and adds them to vector
-                while (std::getline(str, genre, '\'')) {
-                    // Clears out the commas and ' so they aren't included in genre strings
-                    if (genre == ", ") {
-                        continue;
-                    }
-                    artistGenres.push_back(genre);
-                    //std::cout << genre << std::endl;
+            // Goes through genre list and adds them to vector
+            while (std::getline(str, genre, ',')) {
+                // Clears out the commas and ' so they aren't included in genre strings
+                if (genre[0] == ' ') {
+                    genre = genre.substr(1);
                 }
-
-                // Reaches semicolon after genre list
-                std::getline(inFile, fileLine, ';');
-                // Gets album song is from - not needed but stored in case we change our idea
-                std::getline(inFile, fileLine, ';');
-                artistAlbum = fileLine;
-                //std::cout << fileLine << std::endl;
-                //std::cout << std::endl;
-
-                std::getline(inFile, fileLine); // Gets rest of the file
-
-                if (option == 1) 
-                    ArtistsMap[artistName] = artistGenres; // Adds Artist to the map with their genre vector
-                else
-                    ArtistsUnordered[artistName] = artistGenres;
-                artistGenres.clear(); // clears genre vector for next line/artist
+                artistGenres.push_back(genre);
+                //std::cout << genre << std::endl;
             }
+
+             // Reaches semicolon after genre list
+             std::getline(inFile, fileLine, '|');
+             // Gets album song is from - not needed but stored in case we change our idea
+             std::getline(inFile, fileLine, '|');
+             artistAlbum = fileLine;
+             //std::cout << fileLine << std::endl;
+             //std::cout << std::endl;
+
+             std::getline(inFile, fileLine); // Gets rest of the file
+
+             ArtistsMap[artistName] = artistGenres; // Adds Artist to the map with their genre vector
+             ArtistsUnordered[artistName] = artistGenres;
+             artistGenres.clear(); // clears genre vector for next line/artist
         }
-        count++;
     }
 	// Starts clock for time comparisons
     	auto start = std::chrono::high_resolution_clock::now();

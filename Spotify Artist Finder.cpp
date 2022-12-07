@@ -62,8 +62,6 @@ int main()
  
       
    inFile.open("track_info.csv");
-	
-	inFile.open("track_info.csv");
     
     if (inFile.is_open()) {
         std::string fileLine;
